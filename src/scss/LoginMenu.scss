@@ -1,0 +1,62 @@
+.login-menu {
+    position: absolute;
+    padding: 2px 20px;
+    width: 190px;
+    height: 81px;
+    right: 40px;
+    top: 68px;
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    box-shadow: 0px 3.38882px 26.2634px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+
+    &-option {
+        display: flex;
+        flex-direction: row;
+    }
+
+    &-title {
+        /* Doctor */
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 16px;
+        /* identical to box height */
+
+        color: #000000;
+
+
+    }
+    &-link-container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        margin-left: auto;
+    }
+    &-line{
+        /* Line 26 */
+
+border: 1px solid #EBEBEB;
+
+    }
+    &-link {
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        /* identical to box height */
+        text-decoration-line: underline;
+
+        color: #4384E6;
+        background: none;
+        border: none;
+
+    }
+
+}

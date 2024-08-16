@@ -1,0 +1,116 @@
+.carousel-tabs-container {
+    position: relative;
+    width: 99vw;
+    /* Make the container width equal to the viewport width */
+    // overflow: hidden;
+    padding: 0px 15px;
+
+    .nav-buttons {
+        display: flex;
+        position: absolute;
+        top: -60px;
+        right: 65px;
+        z-index: 3;
+
+        .nav-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            background: #ffffff;
+            border: 1px solid #C6C6C6;
+            border-radius: 40px;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            margin: 10px;
+
+            &:hover {
+                background-color: #e5e9ee;
+            }
+        }
+    }
+
+    .tabs {
+        display: flex;
+        // justify-content: center;
+        margin: 30px 0 20px 60px;
+
+        .tab {
+            padding: 0px 20px;
+            margin: 0 5px;
+            height: 31px;
+            cursor: pointer;
+            background-color: #f0f0f0;
+            background: #FFFFFF;
+            border: 0.847205px solid #D2D2D2;
+            border-radius: 25px;
+            transition: background-color 0.3s ease;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 133%;
+            /* or 21px */
+            text-align: center;
+
+            color: #707070;
+
+
+            &.active {
+                background-color: #007bff;
+                color: white;
+                background: #000000;
+            }
+
+            &:hover {
+                background-color: #e0e0e0;
+            }
+        }
+    }
+
+    .carousel {
+        display: flex;
+        overflow-x: hidden;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+
+        &::-webkit-scrollbar {
+            display: none;
+            /* Hide scroll bar */
+        }
+
+        .card {
+            position: relative;
+            width: fit-content;
+            margin:0px 0px 50px 0px;
+            left: 10px;
+            min-width: 300px;
+            display: flex;
+            flex-direction: column;
+            flex: 0 0 auto;
+            margin-right: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 
+            0px 4px 31px rgba(0, 0, 0, 0.12),  /* bottom and sides shadow */
+            0px -4px 0px rgba(0, 0, 0, 0);
+
+            scroll-snap-align: start;
+        }
+    }
+    @media only screen and (max-width: 1100px) {
+        .tabs{
+            display: none;
+        }
+        .nav-buttons{
+            display: none;
+        }
+    
+    }
+}
+
+
+
+
+/* Frame 427318176 */

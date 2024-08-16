@@ -1,0 +1,138 @@
+.search {
+    &-container {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 90vw; /* Use viewport width for responsiveness */
+        max-width: 1080px; /* Keep the max width for larger screens */
+        height: 92px;
+        left: 50%;
+        top: 400px;
+        transform: translateX(-50%); /* Center horizontally */
+        background: #FFFFFF;
+        border-radius: 14px;
+        filter: drop-shadow(0px 4px 31px rgba(0, 0, 0, 0.12));
+    }
+
+    &-textbox {
+        display: flex;
+        align-items: center;
+        margin: 10px;
+        margin-left: 15px;
+        height: 70%;
+        background-color: #F9FAFB;
+        border: 1px solid #E7E7E7;
+        border-radius: 5px;
+    }
+
+    &-input {
+        background-color: transparent;
+        border: 0;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+
+        &:focus {
+            border: none;
+            outline: none;
+        }
+    }
+
+    &-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 70%;
+        width: 157px;
+        background: linear-gradient(271.76deg, #4683D0 17.7%, #7CD0A2 145.75%);
+        box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.05);
+        border-radius: 8px;
+        border: none;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: white;
+    }
+}
+
+.condition {
+    width: 377px;
+
+    &-svg {
+        margin-left: 15px;
+        width: 24px;
+        height: 24px;
+    }
+
+    &-input {
+        margin-left: 10px;
+        width: 300px;
+    }
+}
+
+.city {
+    width: 252px;
+    margin-left: 0px;
+
+    &-svg {
+        margin-left: 15px;
+        width: 24px;
+        height: 24px;
+    }
+
+    &-input {
+        margin-left: 10px;
+        width: 300px;
+    }
+}
+
+.insurance {
+    width: 230px;
+    margin-left: 0px;
+
+    &-svg {
+        margin-left: 15px;
+        display: flex;
+        align-items: center;
+    }
+
+    &-input {
+        margin-left: 10px;
+        width: 300px;
+    }
+}
+
+.button {
+    &-text {
+        margin-left: 10px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .search-container {
+        width: 80vw;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: fit-content;
+        padding: 10px 2.5vh;
+        left: 50%; /* Center on the screen */
+        transform: translateX(-50%);
+        z-index: 2;
+        top:300px
+    }
+
+    .city,
+    .condition,
+    .insurance,
+    .search-button {
+        margin: 10px 0;
+        width: 80vw;
+        height: 48px;
+    }
+}

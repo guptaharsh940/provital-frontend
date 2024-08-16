@@ -1,0 +1,80 @@
+.nav {
+    position: relative;
+    display: flex;
+    width: 100vw;
+    height: 85px;
+    border-bottom: 1px solid #D0D0D0;
+}
+
+.logo {
+    height: 100%;
+    width: fit-content;
+    margin-right: auto;
+    margin-left: 60px;
+}
+
+.buttons {
+    padding-right: 60px;
+    display: flex;
+    margin-left: auto;
+    height: 100%;
+    align-items: center;
+}
+
+@media only screen and (max-width: 1100px) {
+    .buttons {
+        display: none;
+        /* Hide on mobile */
+    }
+
+    .hamburger {
+        display: flex;
+        /* Show on mobile */
+        margin-left: auto;
+        align-items: center;
+        margin-right: 60px;
+    }
+}
+
+.navbar-buttons {
+    padding: 10px;
+    display: flex;
+    border: none;
+    background-color: white;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 36px;
+    text-align: center;
+    color: #707070;
+}
+
+.line {
+    width: 19px;
+    height: 0px;
+
+    border: 1px solid #D0D0D0;
+    transform: rotate(90deg);
+
+}
+
+.navbar-buttons:hover {
+    color: rgb(82, 81, 81);
+}
+
+
+/* Line 10 */
+
+
+
+
+
+
+
+
+
+/* Inside auto layout */
+// flex: none;
+// order: 0;
+// flex-grow: 0;

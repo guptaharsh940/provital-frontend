@@ -1,0 +1,49 @@
+.App {
+  text-align: center;
+  
+  &-logo {
+    height: 40vmin;
+    pointer-events: none;
+  
+    @media (prefers-reduced-motion: no-preference) {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+
+  &-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+
+  &-link {
+    color: #61dafb;
+  }
+}
+
+.angled-line{
+    position: absolute;
+    top: 690px;
+    left: 0;
+    width: 100%;
+    height: 50px; // Adjust as needed
+    background: linear-gradient(135deg, #F0C971, #E5688C); // Gradient colors
+    transform: skewY(-5deg); // Angle for the partition
+    transform-origin: top left;
+    z-index: 1;
+  
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

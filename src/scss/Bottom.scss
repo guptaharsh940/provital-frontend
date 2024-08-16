@@ -1,0 +1,68 @@
+.bottom {
+    width: 100%;
+
+    &-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &-subtitle {
+        margin: 100px 0px 0px 85px;
+        text-align: left;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 133%;
+        /* or 21px */
+        letter-spacing: 0.075em;
+
+        color: #707070;
+    }
+
+    &-title {
+        display: flex;
+        margin: 9px 0px 0px 85px;
+        flex-direction: row;
+        font-family: 'Inter';
+
+        font-size: 28px;
+        line-height: 133%;
+
+        &-regular {
+            margin-left: 5px;
+            margin: 0 0 0 5px;
+            color: #707070
+        }
+
+        &-highlight {
+            margin: 0 0 0 0;
+
+            font-style: italic;
+            font-weight: 600;
+            background: linear-gradient(289.5deg, #F1CA72 27.25%, #D96E6C 92.08%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    }
+}
+
+/* Ellipse 146 */
+.ellipsesecond {
+    position: absolute;
+    width: 250px;
+    height: 246px;
+    left: 1030px;
+    top: 705px;
+
+    background: rgba(207, 225, 240, 0.44);
+    filter: blur(75px);
+    z-index: -1;
+}
+@media only screen and (max-width: 1100px) {
+    .ellipsesecond{
+        display: none;
+    }
+
+}
