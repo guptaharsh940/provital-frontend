@@ -3,7 +3,7 @@ import "../scss/HamburgerMenu.scss"
 import LoginMenu from './LoginMenu';
 
 const HamburgerMenu = () => {
-    document.body.style.overflow = 'hidden';
+    
 
     return (
         <div className='menu'>
