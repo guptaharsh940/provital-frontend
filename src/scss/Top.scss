@@ -1,120 +1,198 @@
-.black{
+.black {
     display: flex;
     overflow: hidden;
     width: 100;
     height: 600px;
 }
-.leftimgscroll{
+
+.leftimgscroll {
     margin-left: 100px;
     width: 245px;
 
 }
-.rightimgscroll{
+
+.rightimgscroll {
     margin-left: 25px;
     width: 245px;
 
 }
 
-@media only screen and (max-width: 1100px){
-    .leftimgscroll{
+@media only screen and (max-width: 1100px) {
+    .leftimgscroll {
         display: none;
     }
-    .rightimgscroll{
+
+    .rightimgscroll {
         display: none;
     }
 }
-    
-.text{
-&-container{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 599px;
-    height: 104px;
-    left: 10vw;
-    top: 87px;
+
+.text {
+    &-container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 599px;
+        height: 104px;
+        left: 10vw;
+        top: 87px;
+    }
+
+    &-line-two {
+        display: flex;
+        flex-direction: row;
+    }
+
+    &-main {
+        padding: 0px 8px 0px 0px;
+        margin: 0px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 48px;
+        letter-spacing: -0.02em;
+        text-align: left;
+        color: #000000;
+    }
+
+    &-highlight {
+        background: linear-gradient(90deg, #1173B3, #0CB9B3);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        color: transparent;
+    }
+
+    &-subtext {
+        /* Optimize your lifestyle and reverse chronic diseases. */
+
+        // position: absolute;
+        width: 630px;
+        height: 32px;
+        // left: 650px;
+        // top: 342px;
+        text-align: left;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 32px;
+        /* identical to box height, or 178% */
+
+        color: #707070;
+
+
+    }
+
+    @media only screen and (max-width: 1100px) {
+        &-container {
+            display: none;
+        }
+        
+    }
 }
 
-&-line-two{
-    display: flex;
-    flex-direction: row;
-}
-&-main{
-    padding: 0px 8px 0px 0px;
-    margin: 0px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 48px;
-    letter-spacing: -0.02em;
-    text-align: left;
-    color: #000000;
-}
-&-highlight{
-    background: linear-gradient(90deg, #1173B3, #0CB9B3);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
-}
-&-subtext{
-    /* Optimize your lifestyle and reverse chronic diseases. */
+.text-mobile{
+    &-container{
+        position: relative;
+        display: none;
+        flex-direction: column;
+        width: 100vw;
+        height: 104px;
+        left: 6vw;
+        top: 5vh;
+    }
+    &-line-two {
+        display: flex;
+        flex-direction: row;
+    }
 
-    // position: absolute;
-    width: 630px;
-    height: 32px;
-    // left: 650px;
-    // top: 342px;
-    text-align: left;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 32px;
-    /* identical to box height, or 178% */
+    &-main {
+        padding: 0px 8px 0px 0px;
+        margin: 0px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 48px;
+        letter-spacing: -0.02em;
+        text-align: left;
+        color: #000000;
+    }
 
-    color: #707070;
+    &-highlight {
+        background: linear-gradient(90deg, #1173B3, #0CB9B3);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        color: transparent;
+    }
+
+    &-subtext {
+        /* Optimize your lifestyle and reverse chronic diseases. */
+
+        // position: absolute;
+        padding-right: 5vw;
+        width: 95vw;
+        height: 32px;
+        // left: 650px;
+        // top: 342px;
+        text-align: left;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 32px;
+        /* identical to box height, or 178% */
+
+        color: #707070;
 
 
+    }
+    @media only screen and (max-width: 1100px) {
+        &-container {
+            display: flex;
+        }
+        
+    }
 }
-@media only screen and (max-width: 1100px){
-&-container{
-    display: none;
-}}
-}
 
-.ellipsefirst{
+.ellipsefirst {
     /* Ellipse 150 */
 
-position: absolute;
-width: 318px;
-height: 313px;
-left: 347px;
-top: 237px;
+    position: absolute;
+    width: 318px;
+    height: 313px;
+    left: 347px;
+    top: 237px;
 
-background: rgba(251, 241, 220, 0.96);
-filter: blur(75px);
+    background: rgba(251, 241, 220, 0.96);
+    filter: blur(75px);
 
-z-index: -1;
+    z-index: -1;
 }
+
 @media only screen and (max-width: 1100px) {
-    .ellipsefirst{
+    .ellipsefirst {
         display: none;
     }
-    .search-parent{
-        position: relative;
+
+    .search-parent {
+        
+        position: absolute;
         height: fit-content;
-        width: 100vh;
+        width: 100vw;
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    
+
+    .black{
+        flex-direction: column;
+    }
+
 
 }
 
 /* Book an appointment with lifestyle medicine experts */
-
-
-

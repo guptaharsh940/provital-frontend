@@ -1,0 +1,22 @@
+.menu{
+    position: fixed;
+    top:75px;
+    min-height: 100vh;
+    right: 0;
+    left: 0;
+    width: 95vw;
+    padding-right: 5vw;
+    background: white;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-menu-hamburger{
+    width: 82vw;
+    // margin:0 auto;
+}
+.font-hamburger{
+    font-size: 17px;
+}
